@@ -1,0 +1,9 @@
+/Users/carlos/Projects/Curso Xamarin Forms/Aula2/SharedProject/SharedProject.iOS/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/carlos/Projects/Curso Xamarin Forms/Aula2/SharedProject/SharedProject.iOS/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Users/carlos/Projects/Curso Xamarin Forms/Aula2/SharedProject/SharedProject.iOS/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
+/Users/carlos/Projects/Curso Xamarin Forms/Aula2/SharedProject/SharedProject.iOS/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
+/Users/carlos/Projects/Curso Xamarin Forms/Aula2/SharedProject/SharedProject.iOS/obj/iPhoneSimulator/Debug/optimized/
+/Users/carlos/Projects/Curso Xamarin Forms/Aula2/SharedProject/SharedProject.iOS/bin/iPhoneSimulator/Debug/SharedProject.iOS.exe.mdb
+/Users/carlos/Projects/Curso Xamarin Forms/Aula2/SharedProject/SharedProject.iOS/bin/iPhoneSimulator/Debug/SharedProject.iOS.exe
+/Users/carlos/Projects/Curso Xamarin Forms/Aula2/SharedProject/SharedProject.iOS/obj/iPhoneSimulator/Debug/SharedProject.iOS.exe
+/Users/carlos/Projects/Curso Xamarin Forms/Aula2/SharedProject/SharedProject.iOS/obj/iPhoneSimulator/Debug/SharedProject.iOS.exe.mdb

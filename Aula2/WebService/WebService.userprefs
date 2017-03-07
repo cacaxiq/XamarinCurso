@@ -1,0 +1,12 @@
+﻿<Properties StartupConfiguration="{632FB3D6-2702-4BDD-8036-4C50F07B400E}|Default">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <RunToCursorBreakpoint file="/Users/carlos/Projects/WebService/WebService/Model/Login.cs" relfile="WebService/Model/Login.cs" line="33" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.WebService.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9CF86844-AB1F-4ADF-AB2D-C2F80D2D36B0" />
+</Properties>

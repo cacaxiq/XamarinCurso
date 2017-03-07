@@ -1,0 +1,12 @@
+/Users/carlos/Projects/XAMLvsCODE/XAMLvsCODE/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile259.AssemblyAttribute.cs
+/Users/carlos/Projects/XAMLvsCODE/XAMLvsCODE/obj/Debug/XAMLvsCODE.App.xaml
+/Users/carlos/Projects/XAMLvsCODE/XAMLvsCODE/obj/Debug/XAMLvsCODE.XAMLPage.xaml
+/Users/carlos/Projects/XAMLvsCODE/XAMLvsCODE/obj/Debug/XAMLvsCODE.App.xaml.g.cs
+/Users/carlos/Projects/XAMLvsCODE/XAMLvsCODE/obj/Debug/XAMLvsCODE.XAMLPage.xaml.g.cs
+/Users/carlos/Projects/XAMLvsCODE/XAMLvsCODE/bin/Debug/XAMLvsCODE.dll.mdb
+/Users/carlos/Projects/XAMLvsCODE/XAMLvsCODE/bin/Debug/XAMLvsCODE.dll
+/Users/carlos/Projects/XAMLvsCODE/XAMLvsCODE/obj/Debug/XAMLvsCODE.dll
+/Users/carlos/Projects/XAMLvsCODE/XAMLvsCODE/obj/Debug/XAMLvsCODE.dll.mdb
+/Users/carlos/Projects/XAMLvsCODE/XAMLvsCODE/bin/Debug/Xamarin.Forms.Core.dll
+/Users/carlos/Projects/XAMLvsCODE/XAMLvsCODE/bin/Debug/Xamarin.Forms.Platform.dll
+/Users/carlos/Projects/XAMLvsCODE/XAMLvsCODE/bin/Debug/Xamarin.Forms.Xaml.dll

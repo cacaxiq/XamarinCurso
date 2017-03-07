@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="PortableProject.MainPage">
+	<Grid>
+
+
+	</Grid>
+	<StackLayout >
+		<StackLayout BackgroundColor="Aqua" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+			Orientation="Horizontal">
+			<Label TextColor="Fuchsia" BackgroundColor="Green" Text="ATTPS"></Label>
+			<Label Text="ATTPS"></Label>
+			<Button Text="ATTPS"></Button>
+			<Entry Text="ATTPS"></Entry>
+		</StackLayout>
+		<StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Orientation="Vertical">
+			<Label Text="ATTPS"></Label>
+			<Label Text="ATTPS"></Label>
+			<Label Text="ATTPS"></Label>
+			<Label Text="ATTPS"></Label>
+		</StackLayout>
+	</StackLayout>
+</ContentPage>

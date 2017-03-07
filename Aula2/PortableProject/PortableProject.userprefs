@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{037559EE-30F4-4C61-88F1-262DE5FAB0F2}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="PortableProject/MainPage.xaml.cs" Line="11" Column="3" />
+      <File FileName="PortableProject/App.xaml.cs" Line="16" Column="43" />
+      <File FileName="PortableProject/obj/Debug/PortableProject.MainPage.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="PortableProject/InfoDevice.cs" Line="9" Column="1" />
+      <File FileName="Droid/InfoDevice.cs" Line="3" Column="1" />
+      <File FileName="iOS/InfoDevice.cs" Line="11" Column="10" />
+      <File FileName="Droid/MainActivity.cs" Line="25" Column="39" />
+      <File FileName="iOS/AppDelegate.cs" Line="17" Column="11" />
+      <File FileName="PortableProject/App.xaml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.PortableProject.Droid PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.PortableProject.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9CF86844-AB1F-4ADF-AB2D-C2F80D2D36B0" />
+  <MultiItemStartupConfigurations />
+</Properties>
