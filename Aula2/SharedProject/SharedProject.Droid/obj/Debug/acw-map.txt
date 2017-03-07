@@ -1,4 +1,0 @@
-SharedProject.Droid.MainActivity, SharedProject.Droid;md58ad9a6f24a980e6feef4ef9cc7d7eeeb.MainActivity
-SharedProject.Droid.MainActivity, SharedProject.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md58ad9a6f24a980e6feef4ef9cc7d7eeeb.MainActivity
-SharedProject.Droid.MainActivity;md58ad9a6f24a980e6feef4ef9cc7d7eeeb.MainActivity
-sharedproject.droid.MainActivity;md58ad9a6f24a980e6feef4ef9cc7d7eeeb.MainActivity
