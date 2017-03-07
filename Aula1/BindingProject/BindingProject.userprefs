@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{7CE6BB1D-F85B-4E45-8CBA-8B19F6D58065}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BindingProject/MainPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="BindingProject/MainPage.xaml.cs" Line="18" Column="1" />
-      <File FileName="BindingProject/ViewModel/MainViewModel.cs" Line="23" Column="22" />
+      <File FileName="BindingProject/ViewModel/MainViewModel.cs" Line="16" Column="12" />
       <File FileName="BindingProject/App.xaml.cs" Line="7" Column="21" />
       <File FileName="BindingProject/SecondPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="BindingProject/ViewModel/BaseViewModel.cs" Line="4" Column="35" />
+      <File FileName="BindingProject/ViewModel/BaseViewModel.cs" Line="8" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
