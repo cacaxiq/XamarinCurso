@@ -1,9 +1,8 @@
-﻿using System;
-using WebService.Infra;
+﻿using WebService.Infra;
 
 namespace WebService.Model
 {
-    public class Login
+    public class Login : ObservedClass
     {
         public Login()
         {
@@ -15,31 +14,30 @@ namespace WebService.Model
         public string Client_ID
         {
             get;
-            set;
         }
 
         public string Client_Secret
         {
             get;
-            set;
         }
 
         public string Grant_Type
         {
             get;
-            set;
         }
 
+        private string _username;
         public string Username
         {
-            get;
-            set;
+            get { return _username; }
+            set { _username = value; OnPropertyChanged(); }
         }
 
+        private string _password;
         public string Password
         {
-            get;
-            set;
+            get { return _password; }
+            set { _password = value; OnPropertyChanged(); }
         }
     }
 }

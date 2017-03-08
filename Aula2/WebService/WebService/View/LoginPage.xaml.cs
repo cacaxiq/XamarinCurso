@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using WebService.ViewModel;
 using Xamarin.Forms;
 
 namespace WebService.View
@@ -10,6 +10,7 @@ namespace WebService.View
         public LoginPage()
         {
             InitializeComponent();
+            BindingContext = new LoginViewModel();
         }
     }
 }

@@ -11,39 +11,24 @@ namespace WebService.Service.Base
     {
         private static string BaseUrl = "http://apresentacao.attps.com.br/AMD/HMP/Servico/";
 
-        public string Token
-        {
-            get;
-            set;
-        }
-
-        public WebServiceBase()
-        {
-            Token = (string)GlobalVariablesManager.GetApplicationCurrentProperty("token");
-        }
-
-        public WebServiceBase(string _token)
-        {
-            Token = _token;
-        }
+        public static string Token = (string)GlobalVariablesManager.GetApplicationCurrentProperty("token");
 
         public static async Task<T> RequestAsync(string URL, RequestType requestType = RequestType.Get, string requestBody = null, int triesNumber = 0, string contentType = "application/json")
         {
-
             T tReturn = null;
 
             for (int i = 0; i <= triesNumber; i++)
             {
                 try
                 {
-
                     using (HttpClient client = new HttpClient())
                     {
                         HttpResponseMessage response = new HttpResponseMessage();
 
                         client.BaseAddress = new Uri(BaseUrl);
 
-                        client.DefaultRequestHeaders.Add("Authorization", (string)GlobalVariablesManager.GetApplicationCurrentProperty("token"));
+                        if (!string.IsNullOrEmpty(Token))
+                            client.DefaultRequestHeaders.Add("Authorization", (string)GlobalVariablesManager.GetApplicationCurrentProperty("token"));
 
                         HttpContent httpContent = new StringContent(requestBody, Encoding.UTF8, contentType);
 

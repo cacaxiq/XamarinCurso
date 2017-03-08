@@ -1,15 +1,21 @@
 ﻿using WebService.Infra;
+using WebService.View;
 using Xamarin.Forms;
 
+[assembly: Xamarin.Forms.Xaml.XamlCompilation(Xamarin.Forms.Xaml.XamlCompilationOptions.Compile)]
 namespace WebService
 {
     public partial class App : Application
     {
+        public static NavigationService NavigationService { get; } = new NavigationService();
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new WebServicePage();
+            NavigationService.Configure("SecondPage", typeof(SecondPage));
+
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()

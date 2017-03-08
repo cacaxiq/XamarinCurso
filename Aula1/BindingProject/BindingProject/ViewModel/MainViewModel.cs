@@ -7,10 +7,14 @@ using Xamarin.Forms;
 namespace BindingProject.ViewModel
 {
     [ImplementPropertyChanged]
-    public class MainViewModel : BaseViewModel
+    public class MainViewModel
     {
-        public MainViewModel(INavigation navigation) : base(navigation)
+        public INavigation Navigation;
+
+        public MainViewModel(INavigation navigation)
         {
+            Navigation = navigation;
+
             Nome = "Carlos Henrique";
 
             Estado = "Amarrado!!!!";
