@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{F46C0A45-4961-4CFC-B850-7019433BC1EE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="App1/App1/MyMasterDetailPage.cs">
+    <Files>
+      <File FileName="App1/App1/App.cs" Line="1" Column="1" />
+      <File FileName="App1/App1/MainPage.cs" Line="1" Column="1" />
+      <File FileName="App1/App1/SignInPage.cs" Line="1" Column="1" />
+      <File FileName="App1/App1/SignInViewModel.cs" Line="1" Column="1" />
+      <File FileName="App1/App1/MyMasterDetailPage.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="App1" expanded="True">
+            <Node name="App1" expanded="True">
+              <Node name="MyMasterDetailPage.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>response.StatusCode</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.App1.Droid PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MultiItemStartupConfigurations />
+</Properties>

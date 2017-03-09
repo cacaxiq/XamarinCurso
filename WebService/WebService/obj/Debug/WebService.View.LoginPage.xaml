@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="WebService.View.LoginPage" BackgroundColor="White"
+	xmlns:local="clr-namespace:WebService.Infra.Validadores;assembly=WebService" Title="Acesso Sistema">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<local:MultiTriggerConverter x:Key="dataHasBeenEntered" />
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<AbsoluteLayout>
+			<ActivityIndicator IsVisible="{Binding Ocupado}" IsRunning="{Binding Ocupado}"
+				AbsoluteLayout.LayoutBounds=".5,.1,100,80" AbsoluteLayout.LayoutFlags="PositionProportional" />
+			<Entry Text="{Binding Login.Username}"  x:Name="username" 
+				BackgroundColor="White" Placeholder="Login"
+				FontSize="25" AbsoluteLayout.LayoutBounds=".5,.3,300,50"
+				TextColor="Blue" AbsoluteLayout.LayoutFlags="PositionProportional"
+				HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand"
+				PlaceholderColor="Silver" local:StringValidatorBehavior.AttachBehavior="true">
+			</Entry>
+			<Entry Text="{Binding Login.Password}" x:Name="password" 
+				BackgroundColor="White" IsPassword="false"
+				TextColor="Black" Placeholder="Senha"
+				PlaceholderColor="Silver" HorizontalTextAlignment="Start"
+				VerticalOptions="FillAndExpand" AbsoluteLayout.LayoutBounds=".5,.45,300,50"
+				AbsoluteLayout.LayoutFlags="PositionProportional " FontSize="25"
+				local:StringValidatorBehavior.AttachBehavior="true">
+			</Entry>
+			<Label Text="{Binding MensagemLogin}" AbsoluteLayout.LayoutBounds=".5,.75,300,50"
+				AbsoluteLayout.LayoutFlags="PositionProportional" TextColor="Green"
+				HorizontalTextAlignment="Center" />
+			<Button IsEnabled="false" Command="{Binding Logar,Mode=TwoWay}"
+				Text="Logar" FontSize="25"
+				VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"
+				BorderRadius="5" BackgroundColor="#f67d00"
+				TextColor="White" AbsoluteLayout.LayoutBounds=".5,.85,300,50"
+				AbsoluteLayout.LayoutFlags="PositionProportional">
+				<Button.Triggers>
+					<MultiTrigger TargetType="Button">
+						<MultiTrigger.Conditions>
+							<BindingCondition Binding="{Binding Source={x:Reference username}, Path=Text.Length, Converter={StaticResource dataHasBeenEntered}}"
+								 Value="true" />
+							<BindingCondition Binding="{Binding Source={x:Reference password}, Path=Text.Length, Converter={StaticResource dataHasBeenEntered}}"
+								 Value="true" />
+						</MultiTrigger.Conditions>
+						<Setter Property="IsEnabled" Value="true" />
+					</MultiTrigger>
+				</Button.Triggers>
+			</Button>
+			<Button Text="Esqueci minha Senha" FontSize="15"
+				VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"
+				BackgroundColor="White" TextColor="#f67d00"
+				BorderWidth="1" BorderColor="#f67d00"
+				AbsoluteLayout.LayoutBounds=".5,.92,200,40" AbsoluteLayout.LayoutFlags="PositionProportional">
+			</Button>
+		</AbsoluteLayout>
+	</ContentPage.Content>
+</ContentPage>

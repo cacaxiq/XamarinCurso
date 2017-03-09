@@ -1,0 +1,7 @@
+/Users/carlos/Downloads/App1/App1/App1/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile7.AssemblyAttribute.cs
+/Users/carlos/Downloads/App1/App1/App1/bin/Debug/App1.dll.mdb
+/Users/carlos/Downloads/App1/App1/App1/bin/Debug/App1.dll
+/Users/carlos/Downloads/App1/App1/App1/obj/Debug/App1.dll
+/Users/carlos/Downloads/App1/App1/App1/obj/Debug/App1.dll.mdb
+/Users/carlos/Downloads/App1/App1/App1/bin/Debug/Xamarin.Forms.Core.dll
+/Users/carlos/Downloads/App1/App1/App1/bin/Debug/Xamarin.Forms.Xaml.dll

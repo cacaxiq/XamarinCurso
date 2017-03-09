@@ -45,3 +45,6 @@ Ementa
 5 Acesso webservice com segurança e autenticação;
 6 Persistência local;
 7 Notificação
+
+Links Úteis:
+https://github.com/xamarin
