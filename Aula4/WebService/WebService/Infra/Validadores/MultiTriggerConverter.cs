@@ -10,9 +10,9 @@ namespace WebService.Infra.Validadores
             object parameter, CultureInfo culture)
         {
             if ((int)value < 6)
-                return true;    // data has been entered
+                return false;    // data has been entered
             else
-                return false;   // input is empty
+                return true;   // input is empty
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

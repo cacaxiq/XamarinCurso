@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	x:Class="WebService.View.LoginPage" BackgroundColor="White"
-	xmlns:local="clr-namespace:WebService.Infra.Validadores;assembly=WebService" Title="Acesso Sistema">
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="WebService.View.LoginPage" 
+	BackgroundColor="White"
+	xmlns:local="clr-namespace:WebService.Infra.Validadores;assembly=WebService" 
+	Title="Acesso Sistema">
 	<ContentPage.Resources>
 		<ResourceDictionary>
 			<local:MultiTriggerConverter x:Key="dataHasBeenEntered" />
@@ -29,7 +33,7 @@
 			<Label Text="{Binding MensagemLogin}" AbsoluteLayout.LayoutBounds=".5,.75,300,50"
 				AbsoluteLayout.LayoutFlags="PositionProportional" TextColor="Green"
 				HorizontalTextAlignment="Center" />
-			<Button IsEnabled="false" Command="{Binding Logar,Mode=TwoWay}"
+			<Button IsEnabled="false"
 				Text="Logar" FontSize="25"
 				VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"
 				BorderRadius="5" BackgroundColor="#f67d00"

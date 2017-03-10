@@ -13,6 +13,7 @@ namespace WebService.View
         {
             InitializeComponent();
             masterPage.ListView.ItemSelected += OnItemSelected;
+
         }
 
         void OnItemSelected(object sender, SelectedItemChangedEventArgs e)

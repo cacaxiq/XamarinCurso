@@ -6,9 +6,9 @@ xmlns:local="clr-namespace:WebService.View;assembly:WebService" x:Class="WebServ
 	</MasterDetailPage.Master>
 	<MasterDetailPage.Detail>
 		<NavigationPage>
-			<x:Arguments>
+
 				<local:ContraChequePage x:Name="contraChequePage"/>
-			</x:Arguments>
+		
 		</NavigationPage>
 	</MasterDetailPage.Detail>
 </MasterDetailPage>

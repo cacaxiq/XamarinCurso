@@ -67,7 +67,6 @@ namespace WebService.ViewModel
 
             Ocupado = false;
             OnPropertyChangedByName("Ocupado");
-            OnPropertyChangedByName("Ocupado");
         }
     }
 }

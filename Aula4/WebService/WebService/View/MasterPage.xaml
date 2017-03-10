@@ -8,7 +8,7 @@
 				SeparatorVisibility="None">
 				<ListView.ItemTemplate>
 					<DataTemplate>
-						<ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" />
+						<ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" Detail="Detalhe Item"/>
 					</DataTemplate>
 				</ListView.ItemTemplate>
 			</ListView>

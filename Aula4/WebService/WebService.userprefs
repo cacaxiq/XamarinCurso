@@ -1,27 +1,20 @@
-﻿<Properties StartupConfiguration="{632FB3D6-2702-4BDD-8036-4C50F07B400E}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.cs">
-    <Files>
-      <File FileName="WebService/ViewModel/LoginViewModel.cs" Line="19" Column="1" />
-      <File FileName="WebService/Model/Login.cs" Line="3" Column="11" />
-      <File FileName="WebService/Infra/ObservedClass.cs" Line="22" Column="1" />
-      <File FileName="iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="WebService/Service/LoginService.cs" Line="30" Column="1" />
-      <File FileName="WebService/Model/CurrentUser.cs" Line="1" Column="1" />
-      <File FileName="WebService/Infra/NavigationService.cs" Line="37" Column="55" />
-    </Files>
+﻿<Properties StartupConfiguration="{872B9881-1C2D-4EE6-B5FB-D048FDC0A504}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WebService" expanded="True">
             <Node name="WebService" expanded="True">
-              <Node name="Infra" expanded="True" />
+              <Node name="References" expanded="True" />
               <Node name="Model" expanded="True" />
-              <Node name="Service" expanded="True" />
-              <Node name="View" expanded="True" />
+              <Node name="View" expanded="True">
+                <Node name="MainPage.xaml" expanded="True">
+                  <Node name="MainPage.xaml.cs" selected="True" />
+                </Node>
+                <Node name="MasterPage.xaml" expanded="True" />
+              </Node>
               <Node name="ViewModel" expanded="True" />
-            </Node>
-            <Node name="WebService.iOS" expanded="True">
-              <Node name="Main.cs" selected="True" />
+              <Node name="App.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -35,10 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/carlos/Projects/Curso Xamarin Forms/XamarinCurso/Aula2/WebService/WebService/ViewModel/LoginViewModel.cs" relfile="WebService/ViewModel/LoginViewModel.cs" line="50" column="1" />
-      <Breakpoint file="/Users/carlos/Projects/Curso Xamarin Forms/XamarinCurso/Aula2/WebService/WebService/ViewModel/LoginViewModel.cs" relfile="WebService/ViewModel/LoginViewModel.cs" line="54" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
