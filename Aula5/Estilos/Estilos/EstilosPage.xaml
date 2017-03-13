@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:Estilos" x:Class="Estilos.EstilosPage">
+	<ContentPage.Content>
+		<StackLayout Padding="20">
+			<Button Text="Button Default" />
+			<Button Text="Button Class Default" StyleClass="Default" />
+			<Button Text="Button Class Primary" StyleClass="Primary" />
+			<Button Text="Button Class Success" StyleClass="Success" />
+			<Button Text="Button Class Info" StyleClass="Info" />
+			<Button Text="Button Class Warning" StyleClass="Warning" />
+			<Button Text="Button Class Danger" StyleClass="Danger" />
+			<Button Text="Button Class Link" StyleClass="Link" />
+			<Button Text="Button Class Default Small" StyleClass="Small" />
+			<Button Text="Button Class Default Large" StyleClass="Large" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

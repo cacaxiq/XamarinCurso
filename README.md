@@ -50,3 +50,4 @@ https://github.com/xamarin
 https://www.codeproject.com/articles/1091247/creating-user-controls-in-xamarin-forms 
 https://dzone.com/articles/borders-on-xamarin-forms-user-interface-elements 
 http://stackoverflow.com/questions/37822668/how-to-change-border-color-of-entry-in-xamarin-forms
+http://www.compliancestudio.io/blog/xamarin-forms-expandable-listview

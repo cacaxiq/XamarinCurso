@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="FeiraMTG.App">
+	<Application.Resources>
+		<ResourceDictionary>
+			<ControlTemplate
+				x:Key="MasterPage">
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition
+							Height="0.1*" />
+						<RowDefinition
+							Height="0.8*" />
+						<RowDefinition
+							Height="0.1*" />
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition
+							Width="0.05*" />
+						<ColumnDefinition
+							Width="0.95*" />
+					</Grid.ColumnDefinitions>
+					<BoxView
+						Grid.ColumnSpan="2"
+						Color="#000000" />
+					<Label
+						Grid.Column="1"
+						Text="FeiraMTG"
+						TextColor="White"
+						VerticalOptions="Center"
+						FontSize="30"/>
+					<ContentPresenter
+						Grid.Row="1" Grid.ColumnSpan="2"/>
+					<BoxView
+						Grid.Row="2"
+						Grid.ColumnSpan="2"
+						Color="#000000" />
+					<Label
+						Grid.Row="2"
+						Grid.Column="1"
+						Text="(c) Xamarin 2016"
+						TextColor="White"
+						VerticalOptions="Center" />
+				</Grid>
+			</ControlTemplate>
+			<Style
+				TargetType="ContentView">
+				<Setter
+					Property="ControlTemplate"
+					Value="{StaticResource MasterPage}" />
+			</Style>
+			<Style
+				TargetType="ContentPage">
+				<Setter
+					Property="BackgroundColor"
+					Value="#999999" />
+			</Style>
+			<Style
+				TargetType="Label">
+			</Style>
+			<Style
+				TargetType="StackLayout">
+				<Setter
+					Property="Orientation"
+					Value="Vertical" />
+				<Setter
+					Property="VerticalOptions"
+					Value="Start" />
+				<Setter
+					Property="Padding"
+					Value="10" />
+			</Style>
+			<Style
+				x:Key="FacebookLogin"
+				TargetType="Button">
+				<Setter
+					Property="TextColor"
+					Value="White" />
+				<Setter
+					Property="BackgroundColor"
+					Value="#01579B" />
+				<Setter
+					Property="FontSize"
+					Value="26" />
+				<Setter
+					Property="Font"
+					Value="Bold" />
+			</Style>
+			<Style
+				TargetType="Button">
+				<Setter
+					Property="TextColor"
+					Value="White" />
+				<Setter
+					Property="BackgroundColor"
+					Value="#333333" />
+				<Setter
+					Property="FontSize"
+					Value="20" />
+				<Setter
+					Property="Font"
+					Value="Bold" />
+			</Style>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="AulaSeis.View.MainPage">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<!--	<OnPlatform x:TypeArguments="Thickness"
+				x:Key="contentPadding"
+				Android="20,20,20,20"
+				iOS="20,25,20,20" />-->
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<StackLayout>
+			<Label x:Name="SubTitle"
+				Text="Escolha uma funcionalidade:" />
+			<Button x:Name="DependencyService"
+				Text="DependencyService" Command="{Binding DependencyService}" />
+			<Button x:Name="CustomRender"
+				Text="CustomRender" Command="{Binding CustomRender}" />
+			<Button x:Name="CustomControl"
+				Text="CustomControl" Command="{Binding CustomControl}" />
+			<Button x:Name="ExampleRelativeLayout"
+				Text="Exemplo RelativeLayout" Command="{Binding ExampleRelativeLayout}" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
