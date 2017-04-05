@@ -40,7 +40,7 @@ namespace WebService.ViewModel
 
         public void ComandLogar()
         {
-            App.NavigationService.NavigateTo("SecondPage",);
+            // App.NavigationService.NavigateTo("SecondPage",);
         }
     }
 }

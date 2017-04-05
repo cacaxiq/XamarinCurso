@@ -51,3 +51,5 @@ https://www.codeproject.com/articles/1091247/creating-user-controls-in-xamarin-f
 https://dzone.com/articles/borders-on-xamarin-forms-user-interface-elements 
 http://stackoverflow.com/questions/37822668/how-to-change-border-color-of-entry-in-xamarin-forms
 http://www.compliancestudio.io/blog/xamarin-forms-expandable-listview
+http://www.johankarlsson.net/2015/09/fontawesome-using-xamarin-forms-and.html
+http://www.johankarlsson.net/2015/10/fontawesome-using-xamarin-forms-and-ios.html

@@ -1,7 +1,7 @@
-﻿<Properties StartupConfiguration="{2C62505B-879D-49B2-8A3B-761EFBBA27CB}|Default">
+﻿<Properties StartupConfiguration="{4623F242-9715-45E6-A731-87EEF2B25E92}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="SharedProject/InfoDevice.cs">
     <Files>
-      <File FileName="SharedProject/InfoDevice.cs" Line="8" Column="44" />
+      <File FileName="SharedProject/InfoDevice.cs" Line="14" Column="13" />
       <File FileName="SharedProject.Droid/MainActivity.cs" Line="23" Column="34" />
       <File FileName="SharedProject.iOS/ViewController.cs" Line="18" Column="53" />
     </Files>
@@ -13,5 +13,5 @@
   <MonoDevelop.Ide.ItemProperties.SharedProject.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9CF86844-AB1F-4ADF-AB2D-C2F80D2D36B0" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.SharedProject.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MonoDevelop.Ide.ItemProperties.SharedProject.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
 </Properties>

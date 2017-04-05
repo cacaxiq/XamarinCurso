@@ -31,15 +31,15 @@
 		</ResourceDictionary>
 	</ContentPage.Resources>
 	<ContentPage.Content>
-<!--		<RelativeLayout>
+		<RelativeLayout>
 			<BoxView x:Name="redBox"
 				Style="{StaticResource BoxRed}" />
 			<BoxView Style="{StaticResource BoxBlue}" />
-		</RelativeLayout>-->
-		<RelativeLayout>
+		</RelativeLayout>
+		<!--<RelativeLayout>
 			<BoxView Color="Red"
 				x:Name="redBox"
-				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=.15,Constant=0}"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=.1,Constant=20}"
 				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=1,Constant=0}"
 				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=.8,Constant=0}" />
 			<BoxView Color="Blue"
@@ -47,6 +47,6 @@
 				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView,ElementName=redBox,Property=X,Factor=1,Constant=20}"
 				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=.5,Constant=0}"
 				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=.5,Constant=0}" />
-		</RelativeLayout>
+		</RelativeLayout>-->
 	</ContentPage.Content>
 </ContentPage>

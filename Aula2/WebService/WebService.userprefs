@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{872B9881-1C2D-4EE6-B5FB-D048FDC0A504}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebService/Infra/NavigationService.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="WebService/ViewModel/LoginViewModel.cs" Line="29" Column="10" />
       <File FileName="WebService/Model/Login.cs" Line="9" Column="55" />
@@ -7,6 +7,7 @@
       <File FileName="WebService/App.xaml.cs" Line="13" Column="10" />
       <File FileName="WebService/Service/Base/WebService.cs" Line="32" Column="1" />
       <File FileName="WebService/Infra/NavigationService.cs" Line="12" Column="9" />
+      <File FileName="WebService/View/LoginPage.xaml.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

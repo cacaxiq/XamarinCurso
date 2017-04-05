@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:ListViewExample.Custom;assembly=ListViewExample"
+	x:Class="ListViewExample.Views.CollapseView">
+	<ContentPage.Content>
+		<controls:CollapseView
+			x:Name="EmployeeView"
+			ItemsSource="{Binding FrutasGroup}"
+			GroupShortNameBinding="{Binding Cor}"
+			IsGroupingEnabled="true"
+			GroupDisplayBinding="{Binding Tipo}">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<TextCell Text="{Binding NomeFruta}"
+						Detail="{Binding Estacao}" />
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</controls:CollapseView>
+	</ContentPage.Content>
+</ContentPage>
