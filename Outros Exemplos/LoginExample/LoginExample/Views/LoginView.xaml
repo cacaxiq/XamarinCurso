@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="LoginExample.Views.LoginView"
+	xmlns:controls="clr-namespace:LoginExample.Helpers.CustomRenders"
+	xmlns:local="clr-namespace:LoginExample.Helpers.Behaviors"
+	BackgroundColor="White">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout Spacing="15"
+				VerticalOptions="CenterAndExpand"
+				HorizontalOptions="FillAndExpand">
+				<Image Source="logo.png"
+					HeightRequest="100">
+				</Image>
+				<controls:BorderedEntry Placeholder="Login"
+					Text="{Binding Login}"
+				BorderColor="Pink"
+					TypeBorder="1"
+					BorderWidth="10"
+					Style="{StaticResource baseEntryLogin}">
+					<controls:BorderedEntry.Behaviors>
+						<local:LengthBehavior Length="8"
+							Type="max" />
+					</controls:BorderedEntry.Behaviors>
+				</controls:BorderedEntry>
+				<Entry Placeholder="Password"
+					IsPassword="true">
+					<Entry.Behaviors>
+						<local:LengthBehavior Length="4"
+							Type="min" />
+					</Entry.Behaviors>
+				</Entry>
+				<Button Text="ENTER"
+					Style="{StaticResource loginButton}"
+					Command="{Binding ForgotPasswordCommand}" />
+				<Button Text="Esqueci minha senha"
+					Style="{StaticResource forgotPassword}"
+					Command="{Binding ForgotPasswordCommand}">
+					<Button.Behaviors>
+						<local:ButtonBehavior />
+					</Button.Behaviors>
+				</Button>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

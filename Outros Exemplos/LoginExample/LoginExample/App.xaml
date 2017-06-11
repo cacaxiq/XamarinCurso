@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:LoginExample.Helpers.CustomRenders"
+	x:Class="LoginExample.App">
+	<Application.Resources>
+		<ResourceDictionary>
+			<Color x:Key="backColor">White</Color>
+			<Color x:Key="sucess">#3c763d</Color>
+			<Color x:Key="warning">#8a6d3b</Color>
+			<Color x:Key="error">#a94442</Color>
+			<Color x:Key="sucessLight">#dff0d8</Color>
+			<Color x:Key="warningLight">#fcf8e3</Color>
+			<Color x:Key="errorLight">#f2dede</Color>
+			<Color x:Key="sucessBorder">#d6e9c6</Color>
+			<Color x:Key="warningBorder">#faebcc</Color>
+			<Color x:Key="errorBorder">#ebccd1</Color>
+			<x:Double x:Key="sizeNormal">20</x:Double>
+			<x:Double x:Key="sizeLarger">35</x:Double>
+			<x:Double x:Key="sizeSmall">12</x:Double>
+			<OnPlatform x:Key="entrySize"
+				x:TypeArguments="x:String">
+				<OnPlatform.iOS>35</OnPlatform.iOS>
+				<OnPlatform.Android>30</OnPlatform.Android>
+			</OnPlatform>
+			<OnPlatform x:Key="Padding"
+				x:TypeArguments="Thickness">
+				<OnPlatform.iOS>20,25,20,20</OnPlatform.iOS>
+				<OnPlatform.Android>20,20,20,20</OnPlatform.Android>
+			</OnPlatform>
+			<OnPlatform x:Key="marginEntry"
+				x:TypeArguments="Thickness">
+				<OnPlatform.iOS>15</OnPlatform.iOS>
+				<OnPlatform.Android>10</OnPlatform.Android>
+			</OnPlatform>
+			<Style ApplyToDerivedTypes="true"
+				TargetType="ContentPage">
+				<Setter Property="BackgroundColor"
+					Value="{StaticResource backColor}" />
+				<Setter Property="Padding"
+					Value="{StaticResource Padding}" />
+			</Style>
+			<Style x:Key="baseEntryLogin"
+				TargetType="controls:BorderedEntry"
+				ApplyToDerivedTypes="true">
+				<Setter Property="HorizontalTextAlignment"
+					Value="Center" />
+				<Setter Property="TextColor"
+					Value="Black" />
+				<Setter Property="BorderColor"
+					Value="Black" />
+				<Setter Property="BorderWidth"
+					Value="10" />
+				<Setter Property="FontSize"
+					Value="{StaticResource sizeNormal}" />
+				<Setter Property="Margin"
+					Value="{StaticResource marginEntry}" />
+			</Style>
+			<Style x:Key="loginButton"
+				TargetType="Button">
+				<Setter Property="TextColor"
+					Value="{StaticResource sucess}" />
+				<Setter Property="FontSize"
+					Value="{StaticResource sizeNormal}" />
+				<Setter Property="BackgroundColor"
+					Value="{StaticResource sucessLight}" />
+				<Setter Property="BorderColor"
+					Value="{StaticResource sucessBorder}" />
+				<Setter Property="BorderWidth"
+					Value="1" />
+			</Style>
+			<Style x:Key="forgotPassword"
+				TargetType="Button">
+				<Setter Property="TextColor"
+					Value="Blue" />
+				<Setter Property="FontSize"
+					Value="{StaticResource sizeSmall}" />
+				<Setter Property="BackgroundColor"
+					Value="Transparent" />
+				<Setter Property="HorizontalOptions"
+					Value="CenterAndExpand" />
+			</Style>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

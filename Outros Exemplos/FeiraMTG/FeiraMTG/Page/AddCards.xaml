@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="FeiraMTG.AddCards"
+	Title="Configurações das listas">
+	<ContentView>
+		<StackLayout>
+			<Label
+				Text="Inclusão de Novas Cartas">
+			</Label>
+			<TableView>
+				<TableView.Root>
+					<TableSection
+						Title="Informações da carta">
+						<EntryCell
+							Label="Nome: ">
+						</EntryCell>
+						<EntryCell
+							Label="Estado: ">
+						</EntryCell>
+						<EntryCell
+							Label="Quantidade: ">
+						</EntryCell>
+					</TableSection>
+					<TableSection
+						Title="Lista destino">
+						<SwitchCell
+							Text="Quero Pegar" />
+						<SwitchCell
+							Text="Quero Passar" />
+					</TableSection>
+				</TableView.Root>
+			</TableView>
+			<Button
+				Text="Incluir Carta" />
+		</StackLayout>
+	</ContentView>
+</ContentPage>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:Lucky.Helpers;assembly=Lucky"
+	x:Class="Lucky.App">
+	<Application.Resources>
+		<ResourceDictionary>
+			<local:NegateBooleanConverter x:Key="inverter" />
+			<Style x:Key="Direcionais"
+				TargetType="Button">
+				<Setter Property="FontFamily"
+					Value="FontAwesome" />
+				<Setter Property="FontSize"
+					Value="40" />
+				<Setter Property="BackgroundColor"
+					Value="Transparent" />
+			</Style>
+			<Style x:Key="Teste"
+				TargetType="Button">
+				<Setter Property="FontFamily"
+					Value="FontAwesome" />
+			</Style>
+			<Style x:Key="Icone"
+				TargetType="Label">
+				<Setter Property="FontFamily"
+					Value="FontAwesome" />
+				<Setter Property="FontSize"
+					Value="40" />
+				<Setter Property="VerticalTextAlignment"
+					Value="Center" />
+				<Setter Property="HorizontalTextAlignment"
+					Value="Center" />
+				<Setter Property="BackgroundColor"
+					Value="Transparent" />
+			</Style>
+			<Style x:Key="Badge"
+				TargetType="Label">
+				<Setter Property="FontFamily"
+					Value="FontAwesome" />
+				<Setter Property="FontSize"
+					Value="16" />
+				<Setter Property="VerticalTextAlignment"
+					Value="Start" />
+				<Setter Property="HorizontalTextAlignment"
+					Value="End" />
+				<Setter Property="BackgroundColor"
+					Value="Transparent" />
+				<Setter Property="TextColor"
+					Value="White" />
+				<Setter Property="Margin"
+					Value="0,0,10,0" />
+				<Setter Property="FontAttributes"
+					Value="Bold" />
+			</Style>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

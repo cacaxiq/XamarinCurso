@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="FeiraMTG.MainPage">
+	<ContentView>
+		<StackLayout>
+			<Button Text="Quero Pegar"
+				Clicked="WantCardsList_Clicked" />
+			<Button Text="Quero Passar"
+				Clicked="ChangedCardsList_Clicked" />
+			<Button Text="Buscar Cartas"
+				Clicked="SearchCardsList_Clicked" />
+			<Button Text="Adicionar cartas"
+				Clicked="AddCards_Clicked" />
+			<Picker x:Name="ColumnPicker"
+				Grid.Row="0"
+
+				HorizontalOptions="FillAndExpand">
+				<Picker.Items>
+					<x:String>ID</x:String>
+					<x:String>Name</x:String>
+					<x:String>Result</x:String>
+					<x:String>Percentage</x:String>
+					<x:String>Remarks</x:String>
+				</Picker.Items>
+			</Picker>
+		</StackLayout>
+	</ContentView>
+</ContentPage>

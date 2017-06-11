@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="StyleSheets.App">
+	<Application.Resources>
+		<ResourceDictionary>
+			<!-- DKMotleyCrew -->
+			<OnPlatform x:Key="DKMotleyCrew"
+				x:TypeArguments="x:String"
+				Android="DKMotleyCrew.otf#DKMotleyCrew"
+				iOS="DKMotleyCrew" />
+			<!-- hErMaNoAlTOUnIcaSe -->
+			<OnPlatform x:Key="hErMaNoAlTOUnIcaSe"
+				x:TypeArguments="x:String"
+				Android="hErMaNoAlTOUnIcaSe.ttf#hErMaNoAlTOUnIcaSe"
+				iOS="hErMaNoAlTOUnIcaSe" />
+			<!-- Poop -->
+			<OnPlatform x:Key="Poop"
+				x:TypeArguments="x:String"
+				Android="Poop.ttf#Poop"
+				iOS="Poop" />
+			<!-- Painter -->
+			<OnPlatform x:Key="Painter"
+				x:TypeArguments="x:String"
+				Android="Painter.ttf#Painter"
+				iOS="Painter" />
+			<!-- SnekRegular -->
+			<OnPlatform x:Key="SnekRegular"
+				x:TypeArguments="x:String"
+				Android="SnekRegular.otf#SnekRegular"
+				iOS="SnekRegular" />
+			<!-- Writing -->
+			<OnPlatform x:Key="Writing"
+				x:TypeArguments="x:String"
+				Android="Writing.ttf#Writing"
+				iOS="Writing" />
+			<!-- Label Base -->
+			<Style x:Key="labelBase"
+				TargetType="Label">
+				<Setter Property="TextColor"
+					Value="Red" />
+				<Setter Property="HorizontalOptions"
+					Value="Center" />
+			</Style>
+			<!-- DKMotleyCrew -->
+			<Style x:Key="label-DKMotleyCrew"
+				TargetType="Label"
+				BasedOn="{StaticResource labelBase}">
+				<Setter Property="FontFamily"
+					Value="{StaticResource DKMotleyCrew}" />
+			</Style>
+			<!-- hErMaNoAlTOUnIcaSe -->
+			<Style x:Key="label-hErMaNoAlTOUnIcaSe"
+				TargetType="Label"
+				BasedOn="{StaticResource labelBase}">
+				<Setter Property="FontFamily"
+					Value="{StaticResource hErMaNoAlTOUnIcaSe}" />
+			</Style>
+			<!-- Poop -->
+			<Style x:Key="label-Poop"
+				TargetType="Label"
+				BasedOn="{StaticResource labelBase}">
+				<Setter Property="FontFamily"
+					Value="{StaticResource Poop}" />
+			</Style>
+			<!-- Painter -->
+			<Style x:Key="label-Painter"
+				TargetType="Label"
+				BasedOn="{StaticResource labelBase}">
+				<Setter Property="FontFamily"
+					Value="{StaticResource Painter}" />
+			</Style>
+			<!-- SnekRegular -->
+			<Style x:Key="label-SnekRegular"
+				TargetType="Label"
+				BasedOn="{StaticResource labelBase}">
+				<Setter Property="FontFamily"
+					Value="{StaticResource SnekRegular}" />
+			</Style>
+			<!-- Writing -->
+			<Style x:Key="label-Writing"
+				TargetType="Label"
+				BasedOn="{StaticResource labelBase}">
+				<Setter Property="FontFamily"
+					Value="{StaticResource Writing}" />
+			</Style>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

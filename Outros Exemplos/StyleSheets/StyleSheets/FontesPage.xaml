@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="StyleSheets.FontesPage">
+	<ContentPage.Content>
+		<StackLayout Padding="0,30,0,0">
+			<Label Style="{StaticResource label-DKMotleyCrew}" Text="Veja minha linda fonte DKMotleyCrew!!">
+				<Label.Text>
+					<OnPlatForm>
+						<Android>
+							android
+						</Android>
+						<iOS>
+							ios
+						</iOS>
+					</OnPlatForm>
+				</Label.Text>
+			</Label>
+			<Label Style="{StaticResource label-hErMaNoAlTOUnIcaSe}" Text="Veja minha linda fonte hErMaNoAlTOUnIcaSe!!" />
+			<Label Style="{StaticResource label-Poop}" Text="Veja minha linda fonte Poop!!" />
+			<Label Style="{StaticResource label-Painter}" Text="Veja minha linda fonte Painter!!" />
+			<Label Style="{StaticResource label-SnekRegular}" Text="Veja minha linda fonte SnekRegular!!" />
+			<Label Style="{StaticResource label-Writing}" Text="Veja minha linda fonte Writing!!" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

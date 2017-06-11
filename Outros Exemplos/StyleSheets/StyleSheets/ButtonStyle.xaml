@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+		xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="StyleSheets.ButtonStyle">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Color x:Key="colorbgsucess">#dff0d8</Color>
+			<Color x:Key="txtcolorsucess">#3c763d</Color>
+			<Color x:Key="colorbginfo">#d9edf7</Color>
+			<Color x:Key="txtcolorinfo">#31708f</Color>
+			<Color x:Key="colorbgwarning">#fcf8e3</Color>
+			<Color x:Key="txtcolorwarning">#8a6d3b</Color>
+			<Color x:Key="colorbgdanger">#f2dede</Color>
+			<Color x:Key="txtcolordanger">#a94442</Color>
+			<Style TargetType="Label" x:Key="baselabel">
+				<Setter Property="HorizontalTextAlignment" Value="Center" />
+				<Setter Property="Text" Value="Texto Default" />
+			</Style>
+			<Style TargetType="Label" x:Key="labelsucess"
+				BasedOn="{StaticResource baselabel}">
+				<Setter Property="BackgroundColor" Value="{StaticResource colorbgsucess}" />
+				<Setter Property="TextColor" Value="{StaticResource txtcolorsucess}" />
+			</Style>
+			<Style TargetType="Label" x:Key="labelinfo"
+				BaseResourceKey="baselabel">
+				<Setter Property="BackgroundColor" Value="{StaticResource colorbginfo}" />
+				<Setter Property="TextColor" Value="{StaticResource txtcolorinfo}" />
+			</Style>
+			<Style TargetType="Label" x:Key="labelwarning"
+				BaseResourceKey="baselabel">
+				<Setter Property="BackgroundColor" Value="{StaticResource colorbgwarning}" />
+				<Setter Property="TextColor" Value="{StaticResource txtcolorwarning}" />
+			</Style>
+			<Style TargetType="Label" x:Key="labeldanger"
+				BaseResourceKey="baselabel">
+				<Setter Property="BackgroundColor" Value="{StaticResource colorbgdanger}" />
+				<Setter Property="TextColor" Value="{StaticResource txtcolordanger}" />
+			</Style>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<StackLayout>
+			<!-- Texto -->
+			<Label Style="{StaticResource labelsucess}" />
+			<Label Style="{StaticResource labelinfo}" />
+			<Label Style="{StaticResource labelwarning}" />
+			<Label Style="{StaticResource labeldanger}" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:Lucky;assembly=Lucky"
+	x:Class="Lucky.LuckyPage"
+	x:Name="principal"
+	BackgroundColor="{Binding Color}">
+	<ContentPage.Content>
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="4*" />
+				<RowDefinition Height="*" />
+				<RowDefinition Height="4*" />
+				<RowDefinition Height="0.25*" />
+				<RowDefinition Height="0.25*" />
+				<RowDefinition Height="0.25*" />
+				<RowDefinition Height="0.25*" />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="2*" />
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="2*" />
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="2*" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>
+			<Button Grid.Row="1"
+				Grid.Column="0"
+				Grid.ColumnSpan="2"
+				Command="{Binding ActionLeftCommand}"
+				Style="{StaticResource Direcionais}"
+				Text="{x:Static local:CustomRenderers.FontAwesome.FAArrowLeft}" 
+			IsVisible="{Binding Derrota, Converter={StaticResource inverter}"/>
+			<Button Grid.Row="1"
+				Grid.Column="5"
+				Grid.ColumnSpan="2"
+				Style="{StaticResource Direcionais}"
+				Command="{Binding ActionRightCommand}"
+				Text="{x:Static local:CustomRenderers.FontAwesome.FAArrowRight}" 
+			IsVisible="{Binding Derrota, Converter={StaticResource inverter}"/>
+			<!-- Life -->
+			<Label Grid.Row="3"
+				Grid.RowSpan="4"
+				TextColor="Red"
+				Grid.Column="1"
+				Text="{x:Static local:CustomRenderers.FontAwesome.FAHeart}"
+				Style="{StaticResource Icone}" />
+			<Label Grid.Row="4"
+				Grid.RowSpan="2"
+				Grid.Column="1"
+				Text="{Binding Life}"
+				Style="{StaticResource Badge}" />
+			<!-- Steps -->
+			<Label Grid.Row="3"
+				Grid.RowSpan="4"
+				TextColor="Black"
+				Grid.Column="3"
+				Text="{x:Static local:CustomRenderers.FontAwesome.FARoad}"
+				Style="{StaticResource Icone}" />
+			<Label Grid.Row="4"
+				Grid.RowSpan="2"
+				Grid.Column="3"
+				Text="{Binding Steps}"
+				Style="{StaticResource Badge}" />
+			<!-- Errors -->
+			<Label Grid.Row="3"
+				Grid.RowSpan="4"
+				Grid.Column="5"
+				Text="{x:Static local:CustomRenderers.FontAwesome.FATimesCircle}"
+				Style="{StaticResource Icone}" />
+			<Label Grid.Row="4"
+				Grid.RowSpan="2"
+				Grid.Column="5"
+				Text="{Binding Errors}"
+				Style="{StaticResource Badge}" />
+			<Label Grid.Row="0"
+				Grid.RowSpan="3"
+				Grid.Column="2"
+				Grid.ColumnSpan="3"
+				Text="You lose!!!!"
+				IsVisible="{Binding Derrota}"
+				FontSize="80"
+				FontFamily="Arial"
+				VerticalTextAlignment="Center"
+				HorizontalTextAlignment="Center" />
+			<Button Grid.Row="0"
+				Grid.RowSpan="3"
+				Grid.Column="2"
+				Grid.ColumnSpan="3"
+				BackgroundColor="Green"
+				TextColor="White"
+				FontSize="25"
+				Text="{x:Static local:CustomRenderers.FontAwesome.FAPlay}"
+				VerticalOptions="EndAndExpand"
+				HorizontalOptions="CenterAndExpand"
+				IsVisible="{Binding Derrota}"
+				Command="{Binding RestartCommand}"
+				HeightRequest="40"
+				WidthRequest="45" 
+			Style="{StaticResource Teste}"/>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

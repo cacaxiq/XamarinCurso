@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{893E04B2-B5A6-46EA-8906-A40ECB1D5928}</ProjectGuid>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UseMSBuildEngine>true</UseMSBuildEngine>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FeiraMTG</RootNamespace>
+    <AssemblyName>FeiraMTG</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App.xaml" />
+    <EmbeddedResource Include="Page\LoginPage.xaml" />
+    <EmbeddedResource Include="Page\FacebookProfilePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\MainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\ChangedCardsList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\WantCardsList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\SearchCardsList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\AddCards.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Ponder.jpg" />
+    <EmbeddedResource Include="Images\AnjoRestauracao.jpg" />
+    <EmbeddedResource Include="Images\AnjoSerra.jpg" />
+    <EmbeddedResource Include="Images\Birds.jpg" />
+    <EmbeddedResource Include="Images\BrainStorm.jpg" />
+    <EmbeddedResource Include="Images\Counterspell.jpg" />
+    <EmbeddedResource Include="Images\Garruk.jpg" />
+    <EmbeddedResource Include="Images\Liliana.jpg" />
+    <EmbeddedResource Include="Images\Mox.jpg" />
+    <EmbeddedResource Include="Images\Mutavault.jpg" />
+    <EmbeddedResource Include="Images\PackRat.jpg" />
+    <EmbeddedResource Include="Images\Raio.jpg" />
+    <EmbeddedResource Include="Images\RedWard.jpg" />
+    <EmbeddedResource Include="Images\StoneRain.jpg" />
+    <EmbeddedResource Include="Images\Thalia.jpg" />
+    <EmbeddedResource Include="Images\Tutor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Page\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MainViewModel.cs" />
+    <Compile Include="Page\FacebookProfilePage.xaml.cs">
+      <DependentUpon>FacebookProfilePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FacebookViewModel.cs" />
+    <Compile Include="Services\FacebookServices.cs" />
+    <Compile Include="Model\FacebookProfile.cs" />
+    <Compile Include="Page\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\ChangedCardsList.xaml.cs">
+      <DependentUpon>ChangedCardsList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\WantCardsList.xaml.cs">
+      <DependentUpon>WantCardsList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\SearchCardsList.xaml.cs">
+      <DependentUpon>SearchCardsList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\AddCards.xaml.cs">
+      <DependentUpon>AddCards.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\WantCardsListViewModel.cs" />
+    <Compile Include="Model\ChangedCardsListViewModel.cs" />
+    <Compile Include="Model\SearchCardsListViewModel.cs" />
+    <Compile Include="Model\AddCardsViewModel.cs" />
+    <Compile Include="Entity\Card.cs" />
+    <Compile Include="DataPreview\ViewModelLocator.cs" />
+    <Compile Include="InfraEstrutura\ImageResourceExtension.cs" />
+    <Compile Include="Interface\IPageBase.cs" />
+    <Compile Include="Interface\IViewModel.cs" />
+    <Compile Include="Model\ViewModel.cs" />
+    <Compile Include="ControleCustomizado\ImageButton.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Net.Http">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="PropertyChanged">
+      <HintPath>..\packages\PropertyChanged.Fody.1.52.1\lib\portable-net4+sl4+wp8+win8+wpa81+MonoAndroid16+MonoTouch40\PropertyChanged.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.1-beta1\lib\portable-net45+win8+wpa81+wp8\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.212-pre4\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.212-pre4\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.212-pre4\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="FodyWeavers.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="Page\" />
+    <Folder Include="Services\" />
+    <Folder Include="Entity\" />
+    <Folder Include="DataPreview\" />
+    <Folder Include="Images\" />
+    <Folder Include="InfraEstrutura\" />
+    <Folder Include="Interface\" />
+    <Folder Include="ControleCustomizado\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Fody.1.29.4\build\portable-net+sl+win+wpa+wp\Fody.targets" Condition="Exists('..\packages\Fody.1.29.4\build\portable-net+sl+win+wpa+wp\Fody.targets')" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Import Project="..\packages\Xamarin.Forms.2.3.4.212-pre4\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.212-pre4\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+</Project>
